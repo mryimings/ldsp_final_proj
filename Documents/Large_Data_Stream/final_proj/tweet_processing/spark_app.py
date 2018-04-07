@@ -4,6 +4,9 @@ from pyspark.sql import Row,SQLContext
 import sys
 import requests
 import traceback
+from nltk.corpus import stopwords
+stop_words = set(stopwords.words('english'))
+
 
 # create spark configuration
 conf = SparkConf()
@@ -45,6 +48,8 @@ def release_rdd(time, rdd):
 # split each tweet into words
 words = dataStream.flatMap(lambda line: line.split(" "))
 
+words = words.filter(lambda word: word.isalpha() and word not in stop_words)
+
 # # filter the words to get only hashtags, then map each hashtag to be a pair of (hashtag,1)
 hashtags = words.map(lambda x: (x, 1))
 
@@ -60,8 +65,4 @@ dataStream.foreachRDD(release_rdd)
 ssc.start()
 # wait for the streaming to finish
 ssc.awaitTermination()
-
-
-#
-
 
