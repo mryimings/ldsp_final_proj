@@ -34,10 +34,13 @@ def process_rdd(time, rdd):
     print("----------- %s -----------" % str(time))
     try:
         print(rdd.collect())
-        rdd = rdd.filter(lambda x: False)
     except:
         print(traceback.print_exc())
     # print(rdd.collect())
+
+
+def release_rdd(time, rdd):
+    rdd.unpersist()
 
 # split each tweet into words
 words = dataStream.flatMap(lambda line: line.split(" "))
@@ -46,10 +49,12 @@ words = dataStream.flatMap(lambda line: line.split(" "))
 hashtags = words.map(lambda x: (x, 1))
 
 # # adding the count of each hashtag to its last count
-tags_totals = hashtags.updateStateByKey(aggregate_tags_count)
+tags_totals = hashtags.reduceByKey(lambda x, y: x+y)
 
-# # do processing for each RDD generated in each interval
-tags_totals.foreachRDD(process_rdd)
+
+tags_totals.pprint(10)
+
+dataStream.foreachRDD(release_rdd)
 
 # start the streaming computation
 ssc.start()
