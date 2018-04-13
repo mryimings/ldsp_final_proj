@@ -6,11 +6,12 @@ import requests
 import traceback
 from nltk.corpus import stopwords
 import time
+import json
 
 i = 0
 
 stop_words = [word for word in stopwords.words('english')] + [word for word in stopwords.words('french')] + [word for word in stopwords.words('spanish')]
-stop_words = [word.lower() for word in stopwords.words('english')] + ['', '-', 'la', 'de', 'que', 'en', 'like', 'get', 'el', 'one', "I'm", "Hi", "Lo", '.', "We're", "great", "anyone", "see", "es", "much", "can't", "eu", "las", "da", "ya", "con", "gonna", "q", "un", "someone", "u", "thing", "se", "always", "go", "around", "going", "got", "could", "really", 'para', "e", "take", "e", "also", "last", "know", "think", "want", "need", "Thank", "today", "would", "everything", "everyone", "every", "make", "Thanks", "ever", "even", "many", "might"]
+stop_words = [word.lower() for word in stop_words] + ['', '-', 'la', 'de', 'que', 'en', 'like', 'get', 'el', 'one', "i'm", "Hi", "Lo", '.', "We're", "great", "anyone", "see", "es", "much", "can't", "eu", "las", "da", "ya", "con", "gonna", "q", "un", "someone", "u", "thing", "se", "always", "go", "around", "going", "got", "could", "really", 'para', "e", "take", "e", "also", "last", "know", "think", "want", "need", "thank", "today", "would", "everything", "everyone", "every", "make", "Thanks", "ever", "even", "many", "might", "getting", "los", "..", "said", "say", "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec", "us", "del", "una", "never", "mi", "le"]
 stop_words += [word.upper() for word in stop_words]
 stop_words += [word[0:1].upper() + word[1:].lower() for word in stop_words]
 stop_words = set(stop_words)
@@ -18,7 +19,7 @@ stop_words = set(stop_words)
 VALID_LETTERS = set(c for c in "qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM1234567890',./#-_")
 
 def is_valid(word):
-    return all(c in VALID_LETTERS for c in word)
+    return all(c in VALID_LETTERS for c in word) and any(c.isalpha() for c in word)
 
 window_size = 10
 
@@ -41,7 +42,7 @@ def normalize(word):
             word = word[1:]
         if word[-1] == ".":
             word = word[:-1]
-    return word
+    return word.lower()
 
 def aggregate_tags_count(new_values, total_sum):
     return sum(new_values) + (total_sum or 0)
@@ -70,17 +71,17 @@ def process_topk(rdd, k=10):
         topk = rdd.top(k, lambda x:x[1])
         highest = topk[0][1]
         print(topk)
-        with open("output_{}.json".format(num), "w") as f:
-            f.write('[\n')
-            for element in topk:
-                f.write("{"+'"text":"{}", "size":{}'.format(element[0], float(element[1])/highest*100)+"},\n")
-            f.write(']\n')
+        json_list = []
+
+        for element in topk:
+            json_list.append({"text": str(element[0]), "size": float(element[1])/highest*100})
+
+        with open("./output_data/output_{}.json".format(num), "w") as f:
+            json.dump(json_list, f)
+
     except:
         print(traceback.print_exc())
 
-
-def release_rdd(time, rdd):
-    rdd.unpersist()
 
 # split each tweet into words
 words = dataStream.flatMap(lambda line: line.split(" "))
