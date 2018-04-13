@@ -1,25 +1,43 @@
 angular.module('wc_app').controller('wc_controller', function($scope, $http) {
 
     //
-    // $http.get('../data/slot_1.json')
-    //     .success(function(data) {
-    //         console.log("DATA:");
-    //         console.log(data)
-    //     })
-    //     .error(function () {
-    //         console.log("Error!");
+    // $http.get('data/slot_1.json')
+    //     .then(function(res) {
+    //         // console.log("DATA:");
+    //         // console.log(data)
+    //         $scope.cloud_data = res.data;
+    //         console.log('data', $scope.cloud_data)
+    //
+    //
     //     });
 
 
         var fill = d3.scale.category20();
+    //
+    // console.log([
+    //     "Hello", "world", "normally", "you", "want", "more", "words",
+    //     "than", "this","shit","love","fuck","languages","nature"].map(function(d) {
+    //     return {text: d, size: 10 + Math.random() * 90};
+    // }));
 
-    console.log([
-        "Hello", "world", "normally", "you", "want", "more", "words",
-        "than", "this","shit","love","fuck","languages","nature"].map(function(d) {
-        return {text: d, size: 10 + Math.random() * 90};
-    }));
 
     var layout = d3.layout.cloud()
+        .size([500, 500])
+        .words($http.get('data/slot_1.json')
+                .then(function(res) {
+                    // console.log("data_json", res.data);
+                    // console.log(res);
+                    return res.data;
+                }))
+        .padding(5)
+        .rotate(function() { return ~~(Math.random() * 2) * 90; })
+        .font("Impact")
+        .fontSize(function(d) { return d.size; })
+        .on("end", draw);
+
+    console.log("test1",layout);
+
+    var layout2 = d3.layout.cloud()
         .size([500, 500])
         .words([
             "Hello", "world", "normally", "you", "want", "more", "words",
@@ -32,7 +50,10 @@ angular.module('wc_app').controller('wc_controller', function($scope, $http) {
         .fontSize(function(d) { return d.size; })
         .on("end", draw);
 
-    layout.start();
+    console.log("test2",layout2);
+
+
+    layout2.start();
 
     function draw(words) {
         d3.select("#vis").append("svg")

@@ -4,6 +4,7 @@ var path = require('path')
 var port = process.env.PORT || 3002
 var app = express()
 
+app.use(express.static('./')); 		// set the static files location /
 
 app.get('/', function(req, res) {
     res.sendFile("index.html", {
