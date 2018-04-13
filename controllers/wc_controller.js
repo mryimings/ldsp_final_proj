@@ -1,4 +1,4 @@
-angular.module('wc_app', []).controller('wc_controller', function($scope, $http) {
+angular.module('wc_app').controller('wc_controller', function($scope, $http) {
 
     //
     // $http.get('../data/slot_1.json')
