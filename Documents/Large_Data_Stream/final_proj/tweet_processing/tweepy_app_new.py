@@ -19,7 +19,9 @@ conn, addr = s.accept()
 print("Connected... Starting getting tweets.")
 
 
-keyword = [w for w in stopwords.words("english")]
+# keyword = [w for w in stopwords.words("english")]
+keyword = ["NBA", "NFL", "MLB", "NHL", "basketball", "baseball", "football", "sports", "Toronto", "Boston", "Philadephia", "New York", "Brooklyn", "Washington", "Atlanta", "Orlando", "Miami", "Charlotte", "Cleveland", "Chicago", "Detroit", "Indiana", "Milwaukee", "Memphis", "New Orland", "Houston", "Dallas", "San Antonio", "Los Angeles", "Utah", "Golden State", "Denver", "Seattle", "Oklahoma", "Minnesota", "Portland", "Sacramento"]
+
 
 def send_tweets_to_spark(http_resp, tcp_connection):
     for line in http_resp.iter_lines():
