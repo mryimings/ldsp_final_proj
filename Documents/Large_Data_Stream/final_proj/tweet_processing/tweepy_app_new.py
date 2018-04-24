@@ -20,8 +20,14 @@ print("Connected... Starting getting tweets.")
 
 
 # keyword = [w for w in stopwords.words("english")]
-keyword = ["NBA", "NFL", "MLB", "NHL", "basketball", "baseball", "football", "sports", "Toronto", "Boston", "Philadephia", "New York", "Brooklyn", "Washington", "Atlanta", "Orlando", "Miami", "Charlotte", "Cleveland", "Chicago", "Detroit", "Indiana", "Milwaukee", "Memphis", "New Orland", "Houston", "Dallas", "San Antonio", "Los Angeles", "Utah", "Golden State", "Denver", "Seattle", "Oklahoma", "Minnesota", "Portland", "Sacramento"]
-
+#keyword = ["NBA", "NFL", "MLB", "NHL", "basketball", "baseball", "football", "sports", "Toronto", "Boston", "Philadephia", "New York", "Brooklyn", "Washington", "Atlanta", "Orlando", "Miami", "Charlotte", "Cleveland", "Chicago", "Detroit", "Indiana", "Milwaukee", "Memphis", "New Orland", "Houston", "Dallas", "San Antonio", "Los Angeles", "Utah", "Golden State", "Denver", "Seattle", "Oklahoma", "Minnesota", "Portland", "Sacramento"]
+keyword = ["classical music", "classical music", "Baroque music", "contemporary music", "Rock and Roll", "Rap", "R&B", "Jazz", "Pop", "New Age music", "melody", "rhythm", "tempo", "album","singer", "band"]
+#keyword = ["clothes", "Hollister", "A&F", "American Eagle", "Aeropostale", "GAP", "The North Face", "POLO", "Calvin Klein", "UGG", "Forever21", "Levi's", "H&M", "ZARA", "Topshop", "CK", "Everlane", "shoes", "boots", "suit", "sweater", "trousers", "tie", "coat", "dress", "jacket", "blouse", "shirt", "skirt", "jeans", "hat"]
+#keyword = ["machine learning","Artificial Intelligence", "Knowledge Representation","NLP", "Reinforcement Learning", "Data Mining", "Artificial Neural Network","Soft Computing", "Artificial Life", "Artificial Neural Network"]
+#keyword = ["game", "gaming", "Nintendo", "EA", "Blizzard", "Ubisoft", "SCE", "KONAMI", "CAPCOM", "SQUARE ENIX", "BANDAI NAMCO", "VIVENDI", "Steam", "Nintendo Switch", "Play Station", "Xbox", "Origin", "GOG", "Uplay", "NS", "PS"]
+#keyword = ["book", "movie", "Science fiction", "Drama", "Action and Adventure", "Romance", "Mystery", "Horror", "Self help", "Guide", "Children's", "fiction", "non-fiction", "Poetry", "Comics", "Dictionaries", "Encyclopedias", "Art", "Cookbooks", "Diaries", "Journals", "Series", "Fantasy", "Biographies", "anthologies"]
+#keyword = ["car", "Ford", "Toyota", "Chevrolet", "Honda", "Nissan", "Jeep", "Hyundai", "Subaru", "Kia", "GMC", "Ram", "Dodge", "Mercedes-Benz", "Volkswagen", "BMW", "Lexus", "Mazda", "Audi", "Buick", "Chrysler"]
+#keyword = ["food", "restaurant", "Calories", "cookie", "chicken", "cheese", "hot dog", "burger", "fast food", "Appetizers", "Breads‎", "Chocolate", "Convenience foods", "Dessert", "Dumplings", "Egg", "Meat‎", "Noodles‎", "Pancake", "Pasta", "Pie", "salad", "Pudding", "Sandwiche", "Seafood‎", "snack", "Soup", "stew", "Sugar‎", "Vegetable"]
 
 def send_tweets_to_spark(http_resp, tcp_connection):
     for line in http_resp.iter_lines():
