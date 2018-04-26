@@ -2,10 +2,13 @@ from config import consumer_key, consumer_secret, access_token, access_token_sec
 from tweepy import OAuthHandler
 import tweepy
 import json
+import time
 
 name = ["BBCWorld", "CNN", "ABC", "NBCNews", "FoxNews", "WIRED", "YahooNews", "WSJbusiness", "usnews", "ReutersPolitics"]
 file = ["BBCWorld.json", "CNN.json‏", "ABC.json", "NBCNews.json", "FoxNews.json", "WIRED.json", "YahooNews.json", "WSJbusiness.json", "usnews.json", "ReutersPolitics.json"]
 
+left = ["@BernieSanders", "@chuckschumer", "@SenatorDurbin", "@NancyPelosi", "@WhipHoyer", "@jacobinmag", "@TheDemocrats", "@AmerLiberal"]
+right = ['@realDonaldTrump', '@FoxNews', '@amconmag', '@BreitbartNews', '@VP', '@GOP', '@Conservatives', '@CR']
 
 
 if __name__ == '__main__':
@@ -15,17 +18,23 @@ if __name__ == '__main__':
 
     api = tweepy.API(auth)
 
-    # This is a part that can get at most 3200 recent tweets of a user. But I don't know how to put them into json files
-    #  https://stackoverflow.com/questions/42225364/getting-whole-user-timeline-of-a-twitter-user
-    #  http://docs.tweepy.org/en/v3.5.0/cursor_tutorial.html
-    with open("./all-the-news/Trump.txt", "w") as f:
-        for tweet in tweepy.Cursor(api.user_timeline, screen_name='@realDonaldTrump',tweet_mode="extended").items():
-            f.write(tweet._json['full_text']+'\n')
+    with open('./data/left.txt', "w") as f:
+        for left_name in left:
+            print(left_name)
+            for tweet in tweepy.Cursor(api.user_timeline, screen_name=left_name,tweet_mode="extended").items():
+                f.write(tweet._json['full_text'])
+                f.write('\n')
+                time.sleep(0.01)
+            print(left_name+" complete!")
+
+    with open("./data/right.txt", "w") as f:
+        for right_name in right:
+            print(right_name)
+            for tweet in tweepy.Cursor(api.user_timeline, screen_name=right_name,tweet_mode="extended").items():
+                f.write(tweet._json['full_text'])
+                f.write('\n')
+                time.sleep(0.01)
+            print(right_name, "complete!")
 
 
-    # Store recent 200 tweets for a user."full_text" is the tweets content.
-    # for i in range(10):
-    #     status = api.user_timeline(screen_name = name[i], count = 200, tweet_mode ="extended")
-    #     json.dumps(status)
-    #     with open(file[i], "w") as f:
-    #         json.dump(status, f)
+
