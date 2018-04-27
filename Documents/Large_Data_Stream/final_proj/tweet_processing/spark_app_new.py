@@ -88,13 +88,19 @@ def process_topk(rdd, k=10):
     except:
         print(traceback.print_exc())
 
-words = dataStream.map(lambda x: tuple(x.split("!@#$[]")))
+rdds = dataStream.map(lambda x: tuple(x.split("!@#$[]")))
 
-words = words.filter(lambda x: len(x)==2)
+rdds = rdds.filter(lambda x: len(x) == 2)
 
-words = words.map(lambda x: (left_model.line_perplexity(x[0]), right_model.line_perplexity(x[0])))
+rdds = rdds.map(lambda x: (left_model.line_perplexity(x[0]), right_model.line_perplexity(x[0])))
 
-words.foreachRDD(lambda x : print(x.collect()))
+rdds = rdds.map(lambda x: (((x[0])/(x[0]+x[1]) - 0.5)*2, 1))
+
+rdds = rdds.reduce(lambda x, y: (x[0]+y[0], x[1]+y[1]))
+
+rdds = rdds.map(lambda x: x[0]/x[1]*100)
+
+rdds.foreachRDD(lambda x : print(x.collect()))
 
 #
 # words = dataStream.flatMap(lambda line: line.split(" "))
