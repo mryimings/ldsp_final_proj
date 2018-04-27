@@ -97,6 +97,7 @@ words = dataStream.map(lambda x: tuple(x.split("!@#$[]")))
 
 words = words.filter(lambda x: len(x)==2)
 words = words.map(lambda x: (word_tokenize(x[0]), x[1]))
+words = words.map(lambda x: ([normalize(word) for word in x[0] if (is_valid(word) and word not in stop_words)], x[1]))
 
 #words = words.map(lambda word: normalize(word[0]))
 #words = words.filter(lambda word: is_valid(word[0]) and word[0] not in stop_words)
