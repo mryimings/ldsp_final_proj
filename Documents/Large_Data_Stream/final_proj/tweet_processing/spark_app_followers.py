@@ -13,7 +13,7 @@ from nltk.tokenize import word_tokenize
 i = 0
 
 stop_words = [word for word in stopwords.words('english')] + [word for word in stopwords.words('french')] + [word for word in stopwords.words('spanish')]
-stop_words = [word.lower() for word in stop_words] + ['', '-', 'la', 'de', 'que', 'en', 'like', 'get', 'one', "i'm", "we're", "great", "anyone", "see", "es", "much", "can't", "eu", "las", "da", "ya", "con", "gonna", "q", "un", "someone", "u", "thing", "se", "always", "go", "around", "going", "got", "could", "really", 'para', "e", "take", "e", "also", "last", "know", "think", "want", "need", "thank", "today", "would", "everything", "everyone", "every", "make", "Thanks", "ever", "even", "many", "might", "getting", "los", "..", "said", "say", "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec", "us", "del", "una", "never", "time", "web", "things", "since", "still", "ass", "new"]
+stop_words = [word.lower() for word in stop_words] + ['', '-', 'la', 'de', 'que', 'en', 'like', 'get', 'one', "i'm", "we're", "great", "anyone", "see", "es", "much", "can't", "eu", "las", "da", "ya", "con", "gonna", "q", "un", "someone", "u", "thing", "se", "always", "go", "around", "going", "got", "could", "really", 'para', "e", "take", "e", "also", "last", "know", "think", "want", "need", "thank", "today", "would", "everything", "everyone", "every", "make", "Thanks", "ever", "even", "many", "might", "getting", "los", "..", "said", "say", "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec", "us", "del", "una", "never", "time", "web", "things", "since", "still", "ass", "new","https", "else", "sure"]
 stop_words += [word.upper() for word in stop_words]
 stop_words += [word[0:1].upper() + word[1:].lower() for word in stop_words]
 stop_words = set(stop_words)
@@ -72,14 +72,18 @@ def process_topk(rdd, k=10):
     num = i % 10
     i += 1
     try:
-        topk = rdd.top(k, lambda x:x[1])
+        rdd = rdd.sortBy(lambda x: x[1], False)
+        topk = rdd.top(k, lambda x: x[1])
         highest = topk[0][1]
         print(topk)
         json_list = []
 
         for element in topk:
-            json_list.append({"text": str(element[0]), "size": float(element[1])/float(highest)*100})
-
+            weight = float(element[1])/float(highest)*100
+            if weight < 101:
+                json_list.append({"text": str(element[0]), "size": weight})
+            else:
+                json_list.append({"text": str(element[0]), "size": 100.0})
         with open("./output_data/output_{}.json".format(num), "w") as f:
             json.dump(json_list, f)
 
@@ -87,9 +91,14 @@ def process_topk(rdd, k=10):
         print(traceback.print_exc())
 
 # For the keys, split by ' ' after split by "!@#$[]"
+# def process(record):
+#     for key in record[0].split(' '):
+#         yield key, record[1]
+
 def process(record):
-    for key in record[0].split(' '):
+    for key in [i.split(',')[0] for i in record[0]]:
         yield key, record[1]
+
 
 
 
@@ -97,13 +106,11 @@ words = dataStream.map(lambda x: tuple(x.split("!@#$[]")))
 
 words = words.filter(lambda x: len(x)==2)
 words = words.map(lambda x: (word_tokenize(x[0]), x[1]))
-words = words.map(lambda x: ([normalize(word) for word in x[0] if (is_valid(word) and word not in stop_words)], x[1]))
+words = words.map(lambda x: ([normalize(word) for word in x[0] if (is_valid(word) and word not in stop_words and not word.startswith('//t.co/'))], x[1]))
+words = words.flatMap(process)
+words = words.reduceByKey(add)
 
-#words = words.map(lambda word: normalize(word[0]))
-#words = words.filter(lambda word: is_valid(word[0]) and word[0] not in stop_words)
-
-
-words.foreachRDD(lambda x : print(x.collect()))
+#words.foreachRDD(lambda x : print(x.collect()))
 
 #
 # words = dataStream.flatMap(lambda line: line.split(" "))
@@ -116,7 +123,7 @@ words.foreachRDD(lambda x : print(x.collect()))
 # #
 # tags_totals = hashtags.reduceByKey(lambda x, y: x+y)
 # #
-# words.foreachRDD(lambda rdd: process_topk(rdd, k=20))
+words.foreachRDD(lambda rdd: process_topk(rdd, k=20))
 
 ssc.start()
 
