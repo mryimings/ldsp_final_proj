@@ -9,7 +9,7 @@ import traceback
 from nltk.corpus import stopwords
 
 TCP_IP = "localhost"
-TCP_PORT = 9001
+TCP_PORT = 9009
 conn = None
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((TCP_IP, TCP_PORT))
@@ -54,13 +54,14 @@ class Listener(StreamListener):
     def on_data(self, data):
         try:
             data = json.loads(data)
-            send_dict = {}
-            send_dict['text'] = data['text']
-            send_dict["followers_count"] = data['user']['followers_count']
-            conn.send((data+'\n').encode('utf8'))
+
+            send_str = "!@#$[]".join([data['text'], str(data['user']['followers_count'])])
+            conn.send((send_str+'\n').encode('utf8'))
         except BaseException as e:
-            print("Error on_data: %s" % str(e))
+            # print("Error on_data: %s" % str(e))
+            print(traceback.print_exc())
             time.sleep(1)
+
 
         return True
 
