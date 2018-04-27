@@ -1,0 +1,29 @@
+{
+  "name": "tweet_cloud",
+  "version": "1.0.0",
+  "description": "large data streaming project",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sym19940907/ldsp_final_proj.git"
+  },
+  "keywords": [
+    "tweets",
+    "word-cloud",
+    "d3js"
+  ],
+  "author": "Simon Sun, Bicheng Jiang, Cheng Sun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sym19940907/ldsp_final_proj/issues"
+  },
+  "homepage": "https://github.com/sym19940907/ldsp_final_proj#readme"
+}

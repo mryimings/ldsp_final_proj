@@ -3,12 +3,11 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
-<!--<script>-->
-    <!--alert("Yes!");-->
 
-<!--</script>-->
+
 <script type="text/javascript" src="wc_app.js"></script>
-<!--<script src="/controllers/wc_controller.js"></script>-->
+<script type="text/javascript" src="controllers/wc_controller.js"></script>
+
 
 
 <head>
@@ -17,12 +16,31 @@
 </head>
 
 <body>
-<div id="vis"></div>
-<!--<script src="/d3.js"></script>-->
-<!--&lt;!&ndash;<script src="https://d3js.org/d3.v5.min.js"></script>&ndash;&gt;-->
-<!--<script src="/build/d3.layout.cloud.js"></script>-->
 
-<!--<div ng-app="wc_app" ng-controller="wc_controller">-->
+<div class="jumbotron text-center">
+    <h1>Tweets Word Cloud </h1>
+</div>
+
+<div ng-app="wc_app" ng-controller="wc_controller">
+    <form tc_controll>
+        Streaming Rate (in second):<br>
+        <input type="number" ng-model="S_rate"><br>
+        Maximum number of word clouds displayed:<br>
+        <input type="number" ng-model="MAX_clouds"><br>
+        Maximum number of words per cloud:<br>
+        <input type="number" ng-model="MAX_words">
+        <br><br>
+        <button ng-click="begin()">Begin!</button>
+    </form>
+</div>
+
+
+
+<div id="vis"></div>
+<script src="d3.js"></script>
+<script src="build/d3.layout.cloud.js"></script>
+
+<div ng-app="wc_app" ng-controller="wc_controller">
 
 </div>
 
