@@ -161,10 +161,6 @@ class TrigramModel(object):
 
         return 2 ** (ans / word_num)
 
-    def line_perplexity(self, line):
-        print(word_tokenize(line))
-        return 2 ** (-self.sentence_logprob(word_tokenize(line)) / len(line))
-
     def save(self, path='./models', filename="model.txt"):
         with open(os.path.join(path, filename), 'w') as f:
             f.write(json.dumps({
