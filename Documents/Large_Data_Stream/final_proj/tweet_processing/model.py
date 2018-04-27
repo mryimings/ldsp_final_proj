@@ -5,6 +5,7 @@ import random
 import json
 import os
 import os.path
+from nltk.tokenize import word_tokenize
 
 
 
@@ -52,7 +53,7 @@ def get_ngrams(sequence, n):
 
 class TrigramModel(object):
 
-    def __init__(self, corpusfile, is_restore=False):
+    def __init__(self, corpusfile=None, is_restore=False):
 
         # Iterate through the corpus once to build a lexicon
         if not is_restore:
@@ -67,7 +68,7 @@ class TrigramModel(object):
             self.count_ngrams(generator)
 
         else:
-            self.restore(corpusfile)
+            self.restore(filename=corpusfile)
 
     def count_ngrams(self, corpus):
         """
@@ -160,6 +161,10 @@ class TrigramModel(object):
 
         return 2 ** (ans / word_num)
 
+    def line_perplexity(self, line):
+        print(word_tokenize(line))
+        return 2 ** (-self.sentence_logprob(word_tokenize(line)) / len(line))
+
     def save(self, path='./models', filename="model.txt"):
         with open(os.path.join(path, filename), 'w') as f:
             f.write(json.dumps({
@@ -190,6 +195,11 @@ class TrigramModel(object):
 
                 self.word_count = json_obj["word_count"]
 
+    def line_perplexity(self, line):
+        line = word_tokenize(line)
+        line = [word.lower() if word in self.lexicon else "UNK" for word in line]
+        return 2 ** ((-self.sentence_logprob(line)) / len(line))
+
 
 
 
@@ -201,12 +211,12 @@ def essay_scoring_experiment(training_file1, training_file2, testdir1, testdir2)
     total = 0
     correct = 0
 
-    for f in os.listdir(testdir1):
-        pp1 = model1.perplexity(corpus_reader(os.path.join(testdir1, f), model1.lexicon))
-        pp2 = model2.perplexity(corpus_reader(os.path.join(testdir1, f), model2.lexicon))
-        if pp1 <= pp2:
-            correct += 1
-        total += 1
+    # for f in os.listdir(testdir1):
+    pp1 = model1.perplexity(corpus_reader(os.path.join(testdir1, f), model1.lexicon))
+    pp2 = model2.perplexity(corpus_reader(os.path.join(testdir1, f), model2.lexicon))
+    if pp1 <= pp2:
+        correct += 1
+    total += 1
 
     for f in os.listdir(testdir2):
         pp1 = model1.perplexity(corpus_reader(os.path.join(testdir2, f), model1.lexicon))
@@ -219,9 +229,10 @@ def essay_scoring_experiment(training_file1, training_file2, testdir1, testdir2)
 
 
 if __name__ == "__main__":
-    train_file1 = './hw1_data/ets_toefl_data/train_low.txt'
-    train_file2 = './hw1_data/ets_toefl_data/train_high.txt'
-    test_dir1 = './hw1_data/ets_toefl_data/test_low'
-    test_dir2 = './hw1_data/ets_toefl_data/test_high'
-    acc = essay_scoring_experiment(train_file1, train_file2, test_dir1, test_dir2)
-    print("The accuracy of toefl scoring is", acc)
+    train_file_left = './data/left/left-all.txt'
+    train_file_right = './data/right/right-all.txt'
+    left_model = TrigramModel(train_file_left)
+    right_model = TrigramModel(train_file_right)
+    left_model.save(filename="left-model.txt")
+    right_model.save(filename="right-model.txt")
+
