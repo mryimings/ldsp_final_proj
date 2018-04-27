@@ -8,6 +8,7 @@ from nltk.corpus import stopwords
 import time
 import json
 from operator import add
+from nltk.tokenize import word_tokenize
 
 i = 0
 
@@ -92,18 +93,16 @@ def process(record):
 
 
 
-words = dataStream.map(lambda x: x.split("!@#$[]"))
+words = dataStream.map(lambda x: tuple(x.split("!@#$[]")))
 
 words = words.filter(lambda x: len(x)==2)
-words = words.flatMap(process)
-words = words.reduceByKey(add)
-words.pprint()
+words = words.map(lambda x: (word_tokenize(x[0]), x[1]))
 
 #words = words.map(lambda word: normalize(word[0]))
 #words = words.filter(lambda word: is_valid(word[0]) and word[0] not in stop_words)
 
 
-#words.foreachRDD(lambda x : print(x.collect()))
+words.foreachRDD(lambda x : print(x.collect()))
 
 #
 # words = dataStream.flatMap(lambda line: line.split(" "))
@@ -116,7 +115,7 @@ words.pprint()
 # #
 # tags_totals = hashtags.reduceByKey(lambda x, y: x+y)
 # #
-words.foreachRDD(lambda rdd: process_topk(rdd, k=20))
+# words.foreachRDD(lambda rdd: process_topk(rdd, k=20))
 
 ssc.start()
 
