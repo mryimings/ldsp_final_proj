@@ -84,24 +84,27 @@ def process_topk(rdd, k=10):
     except:
         print(traceback.print_exc())
 
+words = dataStream.map(lambda line: line)
 
-# split each tweet into words
-words = dataStream.flatMap(lambda line: line.split(" "))
+words.foreachRDD(lambda x: print(x.collect()))
 
-words = words.map(lambda word: normalize(word))
-
-words = words.filter(lambda word: is_valid(word) and word not in stop_words)
-
-# # filter the words to get only hashtags, then map each hashtag to be a pair of (hashtag,1)
-hashtags = words.map(lambda x: (x, 1))
-
-# # adding the count of each hashtag to its last count
-tags_totals = hashtags.reduceByKey(lambda x, y: x+y)
-
-
-# tags_totals.pprint(10)
-# print(tags_totals.collect())
-tags_totals.foreachRDD(lambda rdd: process_topk(rdd, k=20))
+# # split each tweet into words
+# words = dataStream.flatMap(lambda line: line.split(" "))
+#
+# words = words.map(lambda word: normalize(word))
+#
+# words = words.filter(lambda word: is_valid(word) and word not in stop_words)
+#
+# # # filter the words to get only hashtags, then map each hashtag to be a pair of (hashtag,1)
+# hashtags = words.map(lambda x: (x, 1))
+#
+# # # adding the count of each hashtag to its last count
+# tags_totals = hashtags.reduceByKey(lambda x, y: x+y)
+#
+#
+# # tags_totals.pprint(10)
+# # print(tags_totals.collect())
+# tags_totals.foreachRDD(lambda rdd: process_topk(rdd, k=20))
 # dataStream.foreachRDD(release_rdd)
 
 # start the streaming computation
