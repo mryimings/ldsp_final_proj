@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 
@@ -22,34 +24,69 @@
 </div>
 
 <div ng-app="wc_app" ng-controller="wc_controller">
-    <form tc_begin>
-        Streaming Rate (in second):<br>
-        <input type="number" ng-model="S_rate"><br>
-        Maximum number of word clouds displayed:<br>
-        <input type="number" ng-model="MAX_clouds"><br>
-        Maximum number of words per cloud:<br>
-        <input type="number" ng-model="MAX_words">
-        <br><br>
-        <button ng-click="begin()">Begin!</button>
-    </form>
+    <div class="container">
+        <form class="form-horizontal" role="form">
+            <div class="form-group has-success">
+            <label class="col-sm-4 control-label" for="steaming_rate">
+                Streaming Rate (in second):
+            </label>
+            <div class="col-sm-4">
+                <input type="number" ng-model="S_rate" class="form-control" id="steaming_rate">
+            </div>
+            </div>
+
+            <div class="form-group has-success">
+            <label class="col-sm-4 control-label" for="num_clouds">
+                Maximum number of word clouds displayed:
+            </label>
+            <div class="col-sm-4">
+                <input type="number" ng-model="MAX_clouds" class="form-control" id="num_clouds">
+            </div>
+            </div>
+
+            <div class="form-group has-success">
+                <label class="col-sm-4 control-label" for="num_words">
+                    Maximum number of words per cloud:
+                </label>
+                <div class="col-sm-4">
+                    <input type="number" ng-model="MAX_words" class="form-control" id="num_words">
+                </div>
+            </div>
 
 
+            <!--Streaming Rate (in second):<br>-->
+            <!--<input type="number" ng-model="S_rate"><br>-->
+            <!--Maximum number of word clouds displayed:<br>-->
+            <!--<input type="number" ng-model="MAX_clouds"><br>-->
+            <!--Maximum number of words per cloud:<br>-->
+            <!--<input type="number" ng-model="MAX_words">-->
+            <!--<br><br>-->
+            <!--<button ng-click="begin()">Begin!</button>-->
+            <hr>
+            <div class="col-md-8 col-sm-offset-2 text-center">
+                <button class="btn btn-success" ng-click="begin()">
+                    <span class="glyphicon glyphicon-play"></span>Begin
+                </button>
 
-    <form tc_pause>
-        <br><br>
-        <button ng-click="pause()">Pause!</button>
-        <button ng-click="continue()">continue!</button>
-    </form>
+
+                <button class="btn btn-success" ng-click="pause()">
+                    <span class="glyphicon glyphicon-pause"></span>Pause
+                </button>
+
+                <button class="btn btn-success" ng-click="continue()">
+                    <span class="glyphicon glyphicon-step-forward"></span>Continue
+                </button>
 
 
+                <button class="btn btn-success" ng-click="clear()">
+                    <span class="glyphicon glyphicon-stop"></span>Clear
+                </button>
+            </div>
+            <hr>
+        </form>
+    </div>
 
 
-    <form tc_stop>
-        <br><br>
-        <button ng-click="clear()">Clear!</button>
-    </form>
-
-</div>
 
 
 
@@ -57,10 +94,10 @@
 <script src="d3.js"></script>
 <script src="build/d3.layout.cloud.js"></script>
 
-<div ng-app="wc_app" ng-controller="wc_controller">
+<!--<div ng-app="wc_app" ng-controller="wc_controller">-->
 
+<!--</div>-->
 </div>
-
 
 
 </body>
