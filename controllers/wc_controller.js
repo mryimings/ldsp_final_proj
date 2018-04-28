@@ -21,11 +21,20 @@ angular.module('wc_app').controller('wc_controller', function($scope, $http, $in
         $http(req).then(function(res){console.log(res)});
 
         $scope.slot = -1;
+        tc_display();
 
-        var timer = $interval(
+    };
+
+
+
+
+    function tc_display() {
+
+        $scope.timer = $interval(
             function wc_show(){
 
                 $scope.slot++ ;
+                console.log("slot:",$scope.slot);
 
                 var static_path = 'data/slot_';
                 var file  = static_path + String($scope.slot) +".json";
@@ -73,16 +82,32 @@ angular.module('wc_app').controller('wc_controller', function($scope, $http, $in
         $scope.$on(
             "$destroy",
             function() {
-                $interval.cancel( timer );
+                $interval.cancel( $scope.timer );
             }
         );
+    }
+
+
+
+    $scope.pause = function(){
+
+        $interval.cancel( $scope.timer );
 
     };
 
+    $scope.continue = function(){
+
+        tc_display();
+
+    };
+
+
     $scope.clear = function(){
 
-        d3.select("#vis").remove();
+        d3.select("#vis").selectAll('*').remove();
+        // d3.select("#vis").remove();
         $scope.layout.stop();
+        $interval.cancel( $scope.timer );
     };
     // $http.get('data/slot_1.json')
     //     .then(function(res) {
