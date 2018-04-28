@@ -9,6 +9,7 @@ import time
 import json
 from operator import add
 from nltk.tokenize import word_tokenize
+from math import log2
 
 i = 0
 
@@ -72,19 +73,22 @@ def process_topk(rdd, k=10):
     num = i % 10
     i += 1
     try:
+        with open("./file_pipline/streaming_args.json", "r") as f:
+            json_obj = json.load(f)
+            k = json_obj['MAX_words']
         rdd = rdd.sortBy(lambda x: x[1], False)
         topk = rdd.top(k, lambda x: x[1])
-        highest = topk[0][1]
+        highest = log2(float(topk[0][1]))
         print(topk)
         json_list = []
 
         for element in topk:
-            weight = float(element[1])/float(highest)*100
-            if weight < 101:
+            weight = (log2(float(element[1]))/highest)*100
+            if weight < 100:
                 json_list.append({"text": str(element[0]), "size": weight})
             else:
                 json_list.append({"text": str(element[0]), "size": 100.0})
-        with open("./output_data/output_{}.json".format(num), "w") as f:
+        with open("./data/slot_{}.json".format(num), "w") as f:
             json.dump(json_list, f)
 
     except:
