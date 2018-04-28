@@ -35,7 +35,7 @@ angular.module('wc_app').controller('wc_controller', function($scope, $http, $in
 
                         var fill = d3.scale.category20();
                         // console.log('data', $scope.cloud_data)
-                        var layout = d3.layout.cloud()
+                        $scope.layout = d3.layout.cloud()
                             .size([500, 500])
                             .words(res.data)
                             .padding(5)
@@ -45,14 +45,14 @@ angular.module('wc_app').controller('wc_controller', function($scope, $http, $in
                             .fontSize(function(d) { return d.size; })
                             .on("end", draw);
 
-                        layout.start();
+                        $scope.layout.start();
 
                         function draw(words) {
                             d3.select("#vis").append("svg")
-                                .attr("width", layout.size()[0])
-                                .attr("height", layout.size()[1])
+                                .attr("width", $scope.layout.size()[0])
+                                .attr("height", $scope.layout.size()[1])
                                 .append("g")
-                                .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+                                .attr("transform", "translate(" + $scope.layout.size()[0] / 2 + "," + $scope.layout.size()[1] / 2 + ")")
                                 .selectAll("text")
                                 .data(words)
                                 .enter().append("text")
@@ -67,7 +67,7 @@ angular.module('wc_app').controller('wc_controller', function($scope, $http, $in
                         }
 
                     })}
-            , $scope.S_rate * 1000, $scope.MAX_number
+            , $scope.S_rate * 1000, $scope.MAX_clouds
         );
 
         $scope.$on(
@@ -79,13 +79,17 @@ angular.module('wc_app').controller('wc_controller', function($scope, $http, $in
 
     };
 
+    $scope.clear = function(){
 
+        d3.select("#vis").remove();
+        $scope.layout.stop();
+    };
     // $http.get('data/slot_1.json')
     //     .then(function(res) {
     //
     //         var fill = d3.scale.category20();
     //         // console.log('data', $scope.cloud_data)
-    //         var layout = d3.layout.cloud()
+    //         var $scope.layout = d3.$scope.layout.cloud()
     //             .size([500, 500])
     //             .words(res.data)
     //             .padding(5)
@@ -94,14 +98,14 @@ angular.module('wc_app').controller('wc_controller', function($scope, $http, $in
     //             .fontSize(function(d) { return d.size; })
     //             .on("end", draw);
     //
-    //         layout.start();
+    //         $scope.layout.start();
     //
     //         function draw(words) {
     //             d3.select("#vis").append("svg")
-    //                 .attr("width", layout.size()[0])
-    //                 .attr("height", layout.size()[1])
+    //                 .attr("width", $scope.layout.size()[0])
+    //                 .attr("height", $scope.layout.size()[1])
     //                 .append("g")
-    //                 .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+    //                 .attr("transform", "translate(" + $scope.layout.size()[0] / 2 + "," + $scope.layout.size()[1] / 2 + ")")
     //                 .selectAll("text")
     //                 .data(words)
     //                 .enter().append("text")
@@ -120,9 +124,9 @@ angular.module('wc_app').controller('wc_controller', function($scope, $http, $in
 
         // var fill = d3.scale.category20();
 
-    // console.log("test1",layout);
+    // console.log("test1",$scope.layout);
 
-    // var layout2 = d3.layout.cloud()
+    // var $scope.layout2 = d3.$scope.layout.cloud()
     //     .size([500, 500])
     //     .words([
     //         "Hello", "world", "normally", "you", "want", "more", "words",
@@ -135,17 +139,17 @@ angular.module('wc_app').controller('wc_controller', function($scope, $http, $in
     //     .fontSize(function(d) { return d.size; })
     //     .on("end", draw);
     //
-    // console.log("test2",layout2);
+    // console.log("test2",$scope.layout2);
     //
     //
-    // layout2.start();
+    // $scope.layout2.start();
 
     // function draw(words) {
     //     d3.select("#vis").append("svg")
-    //         .attr("width", layout.size()[0])
-    //         .attr("height", layout.size()[1])
+    //         .attr("width", $scope.layout.size()[0])
+    //         .attr("height", $scope.layout.size()[1])
     //         .append("g")
-    //         .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+    //         .attr("transform", "translate(" + $scope.layout.size()[0] / 2 + "," + $scope.layout.size()[1] / 2 + ")")
     //         .selectAll("text")
     //         .data(words)
     //         .enter().append("text")

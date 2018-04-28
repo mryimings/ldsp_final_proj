@@ -22,7 +22,7 @@
 </div>
 
 <div ng-app="wc_app" ng-controller="wc_controller">
-    <form tc_controll>
+    <form tc_begin>
         Streaming Rate (in second):<br>
         <input type="number" ng-model="S_rate"><br>
         Maximum number of word clouds displayed:<br>
@@ -32,6 +32,13 @@
         <br><br>
         <button ng-click="begin()">Begin!</button>
     </form>
+
+
+    <form tc_stop>
+        <br><br>
+        <button ng-click="clear()">Clear!</button>
+    </form>
+
 </div>
 
 
