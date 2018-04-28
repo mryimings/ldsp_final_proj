@@ -5,8 +5,10 @@ import sys
 import requests
 import traceback
 from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
 import time
 import json
+
 
 from model import TrigramModel
 
@@ -37,7 +39,7 @@ ssc = StreamingContext(sc, window_size)
 # setting a checkpoint to allow RDD recovery
 ssc.checkpoint("checkpoint_TwitterApp")
 # read data from port 9009
-dataStream = ssc.socketTextStream("localhost", 9009)
+dataStream = ssc.socketTextStream("localhost", 9001)
 
 def is_valid(word):
     return len(word) >= 3 and all(c in VALID_LETTERS for c in word) and any(c.isalpha() for c in word)
@@ -68,31 +70,16 @@ def print_rdd(time, rdd):
     except:
         print(traceback.print_exc())
 
-def process_topk(rdd, k=10):
-    print("----------- %s -----------" % str(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) ))
-    global i
-    num = i % 10
-    i += 1
-    try:
-        topk = rdd.top(k, lambda x:x[1])
-        highest = topk[0][1]
-        print(topk)
-        json_list = []
 
-        for element in topk:
-            json_list.append({"text": str(element[0]), "size": float(element[1])/highest*100})
+# rdds = dataStream.map(lambda x: tuple(x.split("!@#$[]")))
+#
+# rdds = rdds.filter(lambda x: len(x) == 2)
 
-        with open("./output_data/output_{}.json".format(num), "w") as f:
-            json.dump(json_list, f)
+rdds = dataStream.map((lambda x: word_tokenize(x)))
 
-    except:
-        print(traceback.print_exc())
+rdds = rdds.filter(lambda x: len(x) > 0)
 
-rdds = dataStream.map(lambda x: tuple(x.split("!@#$[]")))
-
-rdds = rdds.filter(lambda x: len(x) == 2)
-
-rdds = rdds.map(lambda x: (left_model.line_perplexity(x[0]), right_model.line_perplexity(x[0])))
+rdds = rdds.map(lambda x: (left_model.line_perplexity(x), right_model.line_perplexity(x)))
 
 rdds = rdds.map(lambda x: (((x[0])/(x[0]+x[1]) - 0.5)*2, 1))
 
