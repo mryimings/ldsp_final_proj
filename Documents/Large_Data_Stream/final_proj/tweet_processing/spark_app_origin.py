@@ -64,14 +64,17 @@ def print_rdd(time, rdd):
     except:
         print(traceback.print_exc())
 
-def process_topk(rdd, k=10):
+def process_topk(rdd):
     print("----------- %s -----------" % str(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) ))
     global i
     num = i % 10
     i += 1
     try:
+        with open("./file_pipline/streaming_args.json", "r") as f:
+            json_obj = json.load(f)
+            k = json_obj['MAX_words']
         topk = rdd.top(k, lambda x:x[1])
-        highest = topk[0][1]
+        highest = max(x[1] for x in topk)
         print(topk)
         json_list = []
 
@@ -108,7 +111,7 @@ tags_totals = hashtags.reduceByKey(lambda x, y: x+y)
 
 # tags_totals.pprint(10)
 # print(tags_totals.collect())
-tags_totals.foreachRDD(lambda rdd: process_topk(rdd, k=20))
+tags_totals.foreachRDD(lambda rdd: process_topk(rdd))
 # dataStream.foreachRDD(release_rdd)
 
 # start the streaming computation
