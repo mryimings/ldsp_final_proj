@@ -2,7 +2,7 @@ angular.module('wc_app').controller('rt_controller', function($scope, $http, $in
 
 
 
-    $scope.S_rate = 1;
+    $scope.S_rate = 5;
     $scope.MAX_clouds = 10;
     $scope.MAX_words = 20;
     $scope.progress = 0;
