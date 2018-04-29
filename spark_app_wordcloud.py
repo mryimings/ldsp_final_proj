@@ -12,7 +12,7 @@ import json
 i = 0
 
 stop_words = [word for word in stopwords.words('english')] + [word for word in stopwords.words('french')] + [word for word in stopwords.words('spanish')]
-stop_words = [word.lower() for word in stop_words] + ['', '-', 'la', 'de', 'que', 'en', 'like', 'get', 'one', "i'm", "we're", "great", "anyone", "see", "es", "much", "can't", "eu", "las", "da", "ya", "con", "gonna", "q", "un", "someone", "u", "thing", "se", "always", "go", "around", "going", "got", "could", "really", 'para', "e", "take", "e", "also", "last", "know", "think", "want", "need", "thank", "today", "would", "everything", "everyone", "every", "make", "Thanks", "ever", "even", "many", "might", "getting", "los", "..", "said", "say", "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec", "us", "del", "una", "never", "time", "web", "things", "since", "still", "ass", "new", "n't", "http", "https", "amp", "sorry", ]
+stop_words = [word.lower() for word in stop_words] + ['', '-', 'la', 'de', 'que', 'en', 'like', 'get', 'one', "i'm", "we're", "great", "anyone", "see", "es", "much", "can't", "eu", "las", "da", "ya", "con", "gonna", "q", "un", "someone", "u", "thing", "se", "always", "go", "around", "going", "got", "could", "really", 'para', "e", "take", "e", "also", "last", "know", "think", "want", "need", "thank", "today", "would", "everything", "everyone", "every", "make", "Thanks", "ever", "even", "many", "might", "getting", "los", "..", "said", "say", "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec", "us", "del", "una", "never", "time", "web", "things", "since", "still", "ass", "new", "n't", "http", "https", "amp", "sorry", "take", "took", "taking", "taken", "saying", "said"]
 stop_words += [word.upper() for word in stop_words]
 stop_words += [word[0:1].upper() + word[1:].lower() for word in stop_words]
 stop_words = set(stop_words)
@@ -21,7 +21,8 @@ VALID_LETTERS = set(c for c in "qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXC
 
 
 
-window_size = 10
+window_size = 5
+PORT = int(sys.argv[1])
 
 # create spark configuration
 conf = SparkConf()
@@ -34,7 +35,7 @@ ssc = StreamingContext(sc, window_size)
 # setting a checkpoint to allow RDD recovery
 ssc.checkpoint("checkpoint_TwitterApp")
 # read data from port 9009
-dataStream = ssc.socketTextStream("localhost", 9001)
+dataStream = ssc.socketTextStream("localhost", PORT)
 
 def is_valid(word):
     return len(word) >= 3 and all(c in VALID_LETTERS for c in word) and any(c.isalpha() for c in word)
