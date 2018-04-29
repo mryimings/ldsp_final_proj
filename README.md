@@ -29,7 +29,7 @@ Then you should run spark_app_wordcloud.py which listens to sockets from tweepy_
 python spark_app_wordcloud.py 9001
 ```
 
-Now you can start the server with the following command
+Now you can start the server with the following command, and then visit http://localhost:3002.
 
 ```bash
 node server.js
