@@ -6,6 +6,9 @@ angular.module('wc_app').controller('st_controller', function($scope, $http, $in
     $scope.MAX_clouds = 10;
     $scope.MAX_words = 20;
     $scope.progress = 0;
+    $scope.c_width = 500;
+    $scope.c_height = 500;
+
 
     $scope.begin = function() {
 
@@ -47,7 +50,7 @@ angular.module('wc_app').controller('st_controller', function($scope, $http, $in
                         var fill = d3.scale.category20();
                         // console.log('data', $scope.cloud_data)
                         $scope.layout = d3.layout.cloud()
-                            .size([500, 500])
+                            .size([$scope.c_width, $scope.c_height])
                             .words(res.data)
                             .padding(5)
                             .rotate(function() { return (Math.random() * 40)-(Math.random() * 40); })
