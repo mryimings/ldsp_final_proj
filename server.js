@@ -2,6 +2,7 @@ var express = require('express')
 var path = require('path')
 var bodyParser = require('body-parser');
 var stats = require("./routes/stats");
+
 // console.log(stats)
 
 
@@ -21,6 +22,7 @@ app.get('/', function(req, res) {
         root: path.join(__dirname, '/views')
     });
 });
+
 
 var listenPort = 3002;
 if (process.env.hasOwnProperty('IISNODE_VERSION') && process.env.hasOwnProperty('PORT')) {

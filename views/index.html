@@ -9,7 +9,10 @@
 
 <script type="text/javascript" src="wc_app.js"></script>
 <script type="text/javascript" src="controllers/wc_controller.js"></script>
-
+<script type="text/javascript" src="controllers/st_controller.js"></script>
+<script type="text/javascript" src="controllers/rt_controller.js"></script>
+<script src="d3.js"></script>
+<script src="build/d3.layout.cloud.js"></script>
 
 
 <head>
@@ -17,86 +20,46 @@
     <title>D3 cloud</title>
 </head>
 
-<body>
+<body ng-app = "wc_app">
 
 <div class="jumbotron text-center">
     <h1>Tweets Word Cloud </h1>
+    <p>Author: <a href="https://www.linkedin.com/in/bicheng-jiang/" target="_blank">Bicheng Jiang </a>, <a href="https://www.linkedin.com/in/chengsun3612/" target="_blank">Cheng Sun </a>,<a href="https://www.linkedin.com/in/yiming-sun-0907/" target="_blank"> Simon Sun</a> </p>
+    <p>Instructor : Prof. Deepak Turaga</p>
 </div>
 
-<div ng-app="wc_app" ng-controller="wc_controller">
-    <div class="container">
-        <form class="form-horizontal" role="form">
-            <div class="form-group has-success">
-            <label class="col-sm-4 control-label" for="steaming_rate">
-                Streaming Rate (in second):
-            </label>
-            <div class="col-sm-4">
-                <input type="number" ng-model="S_rate" class="form-control" id="steaming_rate">
-            </div>
+
+<div class="container">
+    <h3>
+        Welcome to the tweets word cloud streaming system!
+    </h3>
+
+    <hr>
+    <div class="container" style="width:100%">
+        <div class="row">
+            <div class="panel panel-default text-center" >
+                <div class="panel-heading text-center" >
+
+                    <a href="#/streaming/realtime"><h4> Real time Data Streaming Mode </h4> </a>
+                </div>
             </div>
 
-            <div class="form-group has-success">
-            <label class="col-sm-4 control-label" for="num_clouds">
-                Maximum number of word clouds displayed:
-            </label>
-            <div class="col-sm-4">
-                <input type="number" ng-model="MAX_clouds" class="form-control" id="num_clouds">
-            </div>
-            </div>
+            <div class="panel panel-default text-center" >
+                <div class="panel-heading text-center" >
 
-            <div class="form-group has-success">
-                <label class="col-sm-4 control-label" for="num_words">
-                    Maximum number of words per cloud:
-                </label>
-                <div class="col-sm-4">
-                    <input type="number" ng-model="MAX_words" class="form-control" id="num_words">
+                    <a href="#/streaming/static"><h4> Static Data Streaming Mode </h4> </a>
                 </div>
             </div>
 
 
-            <!--Streaming Rate (in second):<br>-->
-            <!--<input type="number" ng-model="S_rate"><br>-->
-            <!--Maximum number of word clouds displayed:<br>-->
-            <!--<input type="number" ng-model="MAX_clouds"><br>-->
-            <!--Maximum number of words per cloud:<br>-->
-            <!--<input type="number" ng-model="MAX_words">-->
-            <!--<br><br>-->
-            <!--<button ng-click="begin()">Begin!</button>-->
-            <hr>
-            <div class="col-md-8 col-sm-offset-2 text-center">
-                <button class="btn btn-success" ng-click="begin()">
-                    <span class="glyphicon glyphicon-play"></span>Begin
-                </button>
+        </div>
 
-
-                <button class="btn btn-success" ng-click="pause()">
-                    <span class="glyphicon glyphicon-pause"></span>Pause
-                </button>
-
-                <button class="btn btn-success" ng-click="continue()">
-                    <span class="glyphicon glyphicon-step-forward"></span>Continue
-                </button>
-
-
-                <button class="btn btn-success" ng-click="clear()">
-                    <span class="glyphicon glyphicon-stop"></span>Clear
-                </button>
-            </div>
-            <hr>
-        </form>
     </div>
+    <hr>
+</div>
 
+<div ng-view>
 
-
-
-
-<div id="vis"></div>
-<script src="d3.js"></script>
-<script src="build/d3.layout.cloud.js"></script>
-
-<!--<div ng-app="wc_app" ng-controller="wc_controller">-->
-
-<!--</div>-->
 </div>
 
 
