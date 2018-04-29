@@ -1,19 +1,17 @@
-# R-Net
-  * A Tensorflow implementation of [R-NET: MACHINE READING COMPREHENSION WITH SELF-MATCHING NETWORKS](https://www.microsoft.com/en-us/research/wp-content/uploads/2017/05/r-net.pdf). This project is specially designed for the [SQuAD](https://arxiv.org/pdf/1606.05250.pdf) dataset.
-  * Should you have any question, please contact Wenxuan Zhou (wzhouad@connect.ust.hk).
+# Dynamic-Word-Cloud-Generator
+  * We designed a dynamic word-cloud generator, which is able to fetching real-time tweets through tweepy API, do word-counting and generate word cloud accordingly. This word cloud generator can also monitoring real-time politic point-of-view on twitter.
+  
+## Topology
+
+<img src='images/topology.png' width="600">
 
 ## Requirements
-
-There have been a lot of known problems caused by using different software versions. Please check your versions before opening issues or emailing me.
-
 #### General
-  * Python >= 3.4
-  * unzip, wget
+  * Python >= 3.6
 #### Python Packages
-  * tensorflow-gpu >= 1.5.0
-  * spaCy >= 2.0.0
-  * tqdm
-  * ujson
+  * tweepy == 3.6.0
+  * pyspark == 2.3.0
+  * nltk == 3.2.5
 
 ## Usage
 
