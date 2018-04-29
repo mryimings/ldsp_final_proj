@@ -12,7 +12,7 @@ import json
 i = 0
 
 stop_words = [word for word in stopwords.words('english')] + [word for word in stopwords.words('french')] + [word for word in stopwords.words('spanish')]
-stop_words = [word.lower() for word in stop_words] + ['', '-', 'la', 'de', 'que', 'en', 'like', 'get', 'one', "i'm", "we're", "great", "anyone", "see", "es", "much", "can't", "eu", "las", "da", "ya", "con", "gonna", "q", "un", "someone", "u", "thing", "se", "always", "go", "around", "going", "got", "could", "really", 'para', "e", "take", "e", "also", "last", "know", "think", "want", "need", "thank", "today", "would", "everything", "everyone", "every", "make", "Thanks", "ever", "even", "many", "might", "getting", "los", "..", "said", "say", "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec", "us", "del", "una", "never", "time", "web", "things", "since", "still", "ass", "new", "n't", "http", "https"]
+stop_words = [word.lower() for word in stop_words] + ['', '-', 'la', 'de', 'que', 'en', 'like', 'get', 'one', "i'm", "we're", "great", "anyone", "see", "es", "much", "can't", "eu", "las", "da", "ya", "con", "gonna", "q", "un", "someone", "u", "thing", "se", "always", "go", "around", "going", "got", "could", "really", 'para', "e", "take", "e", "also", "last", "know", "think", "want", "need", "thank", "today", "would", "everything", "everyone", "every", "make", "Thanks", "ever", "even", "many", "might", "getting", "los", "..", "said", "say", "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec", "us", "del", "una", "never", "time", "web", "things", "since", "still", "ass", "new", "n't", "http", "https", "amp", "sorry", ]
 stop_words += [word.upper() for word in stop_words]
 stop_words += [word[0:1].upper() + word[1:].lower() for word in stop_words]
 stop_words = set(stop_words)
@@ -75,14 +75,15 @@ def process_topk(rdd):
             json_obj = json.load(f)
             k = json_obj['MAX_words']
         topk = rdd.top(k, lambda x:x[1])
-        highest = max(x[1] for x in topk)
-        print(topk)
+        total = sum(x[1] for x in topk)
         json_list = []
 
         for element in topk:
-            json_list.append({"text": str(element[0]), "size": float(element[1])/highest*100})
+            json_list.append({"text": str(element[0]), "size": float(element[1])/total*400})
 
-        with open("./data/slot_{}.json".format(num), "w") as f:
+        print(json_list)
+
+        with open("./data/realtime_data/slot_{}.json".format(num), "w") as f:
             json.dump(json_list, f)
 
     except:
