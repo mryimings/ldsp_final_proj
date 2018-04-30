@@ -23,17 +23,21 @@ First you should run tweepy_app.py, which fetches tweets from Twitter, with a sp
 python tweepy_app.py 9001
 ```
 
-Then you should run spark_app_wordcloud.py which listens to sockets from tweepy_app in a different CLI window. Make sure you listen to the same port of tweepy_app 
+Then you should run spark_app_wordcloud.py which listens to sockets from tweepy_app in a different CLI window. Make sure you listen to the same port of tweepy_app. Input "static" as the second parameter if you would like to use dynamic mode in the woudcloud web-app later.
 
 ```bash
-python spark_app_wordcloud.py 9001
+python spark_app_wordcloud.py 9001 static/realtime
 ```
 
-Now you can start the server with the following command in another CLI window, and then visit http://localhost:3002.
+If you only want to have a look at static data, you don't necessarily need to launch tweepy_app and spark_app_wordcloud
+
+Now you can start the server with the following command in another CLI window, and then visit http://localhost:3002. 
 
 ```bash
 node server.js
 ```
+
+
 
 #### Politic Point-Of-Views monitoring
 

@@ -12,7 +12,7 @@ import json
 i = 0
 
 stop_words = [word for word in stopwords.words('english')] + [word for word in stopwords.words('french')] + [word for word in stopwords.words('spanish')]
-stop_words = [word.lower() for word in stop_words] + ['', '-', 'la', 'de', 'que', 'en', 'like', 'get', 'one', "i'm", "we're", "great", "anyone", "see", "es", "much", "can't", "eu", "las", "da", "ya", "con", "gonna", "q", "un", "someone", "u", "thing", "se", "always", "go", "around", "going", "got", "could", "really", 'para', "e", "take", "e", "also", "last", "know", "think", "want", "need", "thank", "today", "would", "everything", "everyone", "every", "make", "Thanks", "ever", "even", "many", "might", "getting", "los", "..", "said", "say", "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec", "us", "del", "una", "never", "time", "web", "things", "since", "still", "ass", "new", "n't", "http", "https", "amp", "sorry", "take", "took", "taking", "taken", "saying", "said"]
+stop_words = [word.lower() for word in stop_words] + ['', '-', 'la', 'de', 'que', 'en', 'like', 'get', 'one', "i'm", "we're", "great", "anyone", "see", "es", "much", "can't", "eu", "las", "da", "ya", "con", "gonna", "q", "un", "someone", "u", "thing", "se", "always", "go", "around", "going", "got", "could", "really", 'para', "e", "take", "e", "also", "last", "know", "think", "want", "need", "thank", "today", "would", "everything", "everyone", "every", "make", "Thanks", "ever", "even", "many", "might", "getting", "los", "..", "said", "say", "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec", "us", "del", "una", "never", "time", "web", "things", "since", "still", "ass", "new", "n't", "http", "https", "amp", "sorry", "take", "took", "taking", "taken", "saying", "said", "let", "'re"]
 stop_words += [word.upper() for word in stop_words]
 stop_words += [word[0:1].upper() + word[1:].lower() for word in stop_words]
 stop_words = set(stop_words)
@@ -68,9 +68,18 @@ def print_rdd(time, rdd):
 
 def process_topk(rdd):
     print("----------- %s -----------" % str(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) ))
+
     global i
-    num = i % 10
+    if sys.argv[2] == "realtime":
+        path = "./data/realtime_data/slot_{}.json"
+        num = i % 10
+    elif sys.argv[2] == "static":
+        path = "./data/static_data/slot_{}.json"
+        num = i
+    else:
+        raise ValueError("Unknown Mode")
     i += 1
+
     try:
         with open("./file_pipline/streaming_args.json", "r") as f:
             json_obj = json.load(f)
@@ -84,7 +93,7 @@ def process_topk(rdd):
 
         print(json_list)
 
-        with open("./data/realtime_data/slot_{}.json".format(num), "w") as f:
+        with open(path.format(num), "w") as f:
             json.dump(json_list, f)
 
     except:
