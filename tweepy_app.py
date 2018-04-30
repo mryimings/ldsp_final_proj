@@ -84,14 +84,5 @@ if __name__ == '__main__':
         except KeyboardInterrupt:
             break
 
-    # 获取类似于内容句柄的东西
-    # api = tweepy.API(auth)
-    #
-    # # 打印其他用户主页上的时间轴里的内容
-    # public_tweets = api.user_timeline('realDonaldTrump')
-    #
-    # for tweet in public_tweets:
-    #     print(tweet.text)
-
 
 
