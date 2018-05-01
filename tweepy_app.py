@@ -31,8 +31,8 @@ keyword_dict = {"default": [w for w in stopwords.words("english")],
                 "food": ["food", "restaurant", "calories", "cookie", "chicken", "cheese", "hot dog", "burger", "fast food", "appetizers", "breads‎", "chocolate", "convenience foods", "dessert", "dumpling", "egg", "meat‎", "noodles‎", "pancake", "pasta", "pie", "salad", "pudding", "sandwich", "seafood‎", "snack", "soup", "stew", "sugar‎", "vegetable"],
 }
 
-keyword = keyword_dict[sys.argv[2] if len(sys.argv) >= 3 else "default"]
-keyword =  keyword + [word.upper() for word in keyword] + [word[0].upper() + word[1:].lower() for word in keyword]
+# keyword = keyword_dict[sys.argv[2] if len(sys.argv) >= 3 else "default"]
+# keyword =  keyword + [word.upper() for word in keyword] + [word[0].upper() + word[1:].lower() for word in keyword]
 
 def send_tweets_to_spark(http_resp, tcp_connection):
     for line in http_resp.iter_lines():
@@ -80,6 +80,10 @@ if __name__ == '__main__':
     start_time = time.time()
     while True:
         try:
+            with open("./file_pipline/streaming_args.json", "r") as f:
+                json_obj = json.load(f)
+            keyword = keyword_dict[json_obj["keyword"]]
+            keyword = keyword + [word.upper() for word in keyword] + [word[0].upper() + word[1:].lower() for word in keyword]
             twitter_stream.filter(track=keyword)
         except KeyboardInterrupt:
             break
