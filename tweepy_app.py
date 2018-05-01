@@ -80,7 +80,7 @@ if __name__ == '__main__':
         try:
             with open("./file_pipline/streaming_args.json", "r") as f:
                 json_obj = json.load(f)
-            keyword = keyword_dict[json_obj["keyword"]]
+            keyword = keyword_dict[json_obj["keyword"][0]]
             keyword = keyword + [word.upper() for word in keyword] + [word[0].upper() + word[1:].lower() for word in keyword]
             twitter_stream.filter(track=keyword)
         except KeyboardInterrupt:
