@@ -3,7 +3,51 @@
   <component name="ChangeListManager">
     <list default="true" id="58b6294c-bf75-4caa-9aed-28303f786747" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/views/static_data.html" afterPath="$PROJECT_DIR$/views/static_data.html" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525204990000.bk.crc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525204990000.crc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525204995000.bk.crc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525204995000.crc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525205000000.bk.crc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525205000000.crc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525205005000.bk.crc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525205005000.crc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525205010000.bk.crc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525205010000.crc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525204990000" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525204990000.bk" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525204995000" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525204995000.bk" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525205000000" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525205000000.bk" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525205005000" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525205005000.bk" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525205010000" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525205010000.bk" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_TwitterApp/receivedBlockMetadata/log-1525204968601-1525205028601" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/realtime_data/slot_0.json" afterPath="$PROJECT_DIR$/data/realtime_data/slot_0.json" />
+      <change beforePath="$PROJECT_DIR$/data/realtime_data/slot_1.json" afterPath="$PROJECT_DIR$/data/realtime_data/slot_1.json" />
+      <change beforePath="$PROJECT_DIR$/data/realtime_data/slot_10.json" afterPath="$PROJECT_DIR$/data/realtime_data/slot_10.json" />
+      <change beforePath="$PROJECT_DIR$/data/realtime_data/slot_11.json" afterPath="$PROJECT_DIR$/data/realtime_data/slot_11.json" />
+      <change beforePath="$PROJECT_DIR$/data/realtime_data/slot_12.json" afterPath="$PROJECT_DIR$/data/realtime_data/slot_12.json" />
+      <change beforePath="$PROJECT_DIR$/data/realtime_data/slot_13.json" afterPath="$PROJECT_DIR$/data/realtime_data/slot_13.json" />
+      <change beforePath="$PROJECT_DIR$/data/realtime_data/slot_14.json" afterPath="$PROJECT_DIR$/data/realtime_data/slot_14.json" />
+      <change beforePath="$PROJECT_DIR$/data/realtime_data/slot_15.json" afterPath="$PROJECT_DIR$/data/realtime_data/slot_15.json" />
+      <change beforePath="$PROJECT_DIR$/data/realtime_data/slot_16.json" afterPath="$PROJECT_DIR$/data/realtime_data/slot_16.json" />
+      <change beforePath="$PROJECT_DIR$/data/realtime_data/slot_17.json" afterPath="$PROJECT_DIR$/data/realtime_data/slot_17.json" />
+      <change beforePath="$PROJECT_DIR$/data/realtime_data/slot_18.json" afterPath="$PROJECT_DIR$/data/realtime_data/slot_18.json" />
+      <change beforePath="$PROJECT_DIR$/data/realtime_data/slot_19.json" afterPath="$PROJECT_DIR$/data/realtime_data/slot_19.json" />
+      <change beforePath="$PROJECT_DIR$/data/realtime_data/slot_2.json" afterPath="$PROJECT_DIR$/data/realtime_data/slot_2.json" />
+      <change beforePath="$PROJECT_DIR$/data/realtime_data/slot_3.json" afterPath="$PROJECT_DIR$/data/realtime_data/slot_3.json" />
+      <change beforePath="$PROJECT_DIR$/data/realtime_data/slot_4.json" afterPath="$PROJECT_DIR$/data/realtime_data/slot_4.json" />
+      <change beforePath="$PROJECT_DIR$/data/realtime_data/slot_5.json" afterPath="$PROJECT_DIR$/data/realtime_data/slot_5.json" />
+      <change beforePath="$PROJECT_DIR$/data/realtime_data/slot_6.json" afterPath="$PROJECT_DIR$/data/realtime_data/slot_6.json" />
+      <change beforePath="$PROJECT_DIR$/data/realtime_data/slot_7.json" afterPath="$PROJECT_DIR$/data/realtime_data/slot_7.json" />
+      <change beforePath="$PROJECT_DIR$/data/realtime_data/slot_8.json" afterPath="$PROJECT_DIR$/data/realtime_data/slot_8.json" />
+      <change beforePath="$PROJECT_DIR$/data/realtime_data/slot_9.json" afterPath="$PROJECT_DIR$/data/realtime_data/slot_9.json" />
+      <change beforePath="$PROJECT_DIR$/file_pipline/current_point.json" afterPath="$PROJECT_DIR$/file_pipline/current_point.json" />
+      <change beforePath="$PROJECT_DIR$/file_pipline/streaming_args.json" afterPath="$PROJECT_DIR$/file_pipline/streaming_args.json" />
+      <change beforePath="$PROJECT_DIR$/model.py" afterPath="$PROJECT_DIR$/model.py" />
+      <change beforePath="$PROJECT_DIR$/spark_app_wordcloud.py" afterPath="$PROJECT_DIR$/spark_app_wordcloud.py" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,102 +61,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="package-lock.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package-lock.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3608">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="195" column="36" lean-forward="false" selection-start-line="195" selection-start-column="36" selection-end-line="195" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="streaming_args.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/file_pipline/streaming_args.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+              <caret line="0" column="98" lean-forward="false" selection-start-line="0" selection-start-column="98" selection-end-line="0" selection-end-column="98" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="st_controller.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/st_controller.js">
+      <file leaf-file-name="spark_app_wordcloud.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spark_app_wordcloud.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="-227">
+              <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="static_data.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/static_data.html">
+      <file leaf-file-name="spark_app_politics.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spark_app_politics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="120">
+              <caret line="36" column="51" lean-forward="false" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="realtime_data.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/realtime_data.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1380">
-              <caret line="92" column="67" lean-forward="false" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rt_controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/rt_controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="slot_39.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/static_data/slot_39.json">
+      <file leaf-file-name="merge.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/merge.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="slot_27.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/static_data/slot_27.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="d3.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/d3.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="d3.layout.cloud.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/d3.layout.cloud.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,9 +168,11 @@
         <option value="$PROJECT_DIR$/views/home.html" />
         <option value="$PROJECT_DIR$/views/realtime_data.html" />
         <option value="$PROJECT_DIR$/controllers/rt_controller.js" />
-        <option value="$PROJECT_DIR$/spark_app_wordcloud.py" />
         <option value="$PROJECT_DIR$/views/static_data.html" />
         <option value="$PROJECT_DIR$/controllers/st_controller.js" />
+        <option value="$PROJECT_DIR$/spark_app_wordcloud.py" />
+        <option value="$PROJECT_DIR$/spark_app_politics.py" />
+        <option value="$PROJECT_DIR$/model.py" />
       </list>
     </option>
   </component>
@@ -197,17 +211,13 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ldsp_final_proj" type="b2602c69:ProjectViewProjectNode" />
               <item name="ldsp_final_proj" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ldsp_final_proj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ldsp_final_proj" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ldsp_final_proj" type="b2602c69:ProjectViewProjectNode" />
@@ -219,16 +229,10 @@
               <item name="ldsp_final_proj" type="462c0819:PsiDirectoryNode" />
               <item name="file_pipline" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ldsp_final_proj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ldsp_final_proj" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -252,20 +256,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_0.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_1.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_2.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_3.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_4.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_5.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_6.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_7.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_8.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_9.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/file_pipline/current_point.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/file_pipline/streaming_args.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/spark_app_wordcloud.py</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -273,47 +263,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525204990000.bk.crc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525204990000.crc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525204995000.bk.crc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525204995000.crc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525205000000.bk.crc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525205000000.crc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525205005000.bk.crc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525205005000.crc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525205010000.bk.crc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525205010000.crc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525204990000</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525204990000.bk</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525204995000</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525204995000.bk</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525205000000</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525205000000.bk</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525205005000</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525205005000.bk</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525205010000</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525205010000.bk</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/receivedBlockMetadata/log-1525204968601-1525205028601</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_10.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_11.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_12.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_13.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_14.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_15.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_16.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_17.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_18.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_19.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_20.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_21.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_22.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_23.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_24.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_25.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_26.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_27.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_28.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_29.json</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -321,27 +270,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525120280000.bk.crc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525120280000.crc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525120285000.bk.crc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525120285000.crc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525120290000.bk.crc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525120290000.crc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525120295000.bk.crc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525120295000.crc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525120300000.bk.crc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525120300000.crc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525120280000</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525120280000.bk</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525120285000</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525120285000.bk</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525120290000</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525120290000.bk</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525120295000</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525120295000.bk</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525120300000</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525120300000.bk</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/receivedBlockMetadata/log-1525120275202-1525120335202</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -421,6 +349,1244 @@
         <option name="myCanBeAbsent" value="false" />
         <option name="myId" value="SWITCHED" />
       </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_0.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_1.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_2.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_3.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_4.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_5.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_6.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_7.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_8.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_9.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/file_pipline/current_point.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/file_pipline/streaming_args.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/spark_app_wordcloud.py</PATH>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525204990000.bk.crc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525204990000.crc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525204995000.bk.crc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525204995000.crc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525205000000.bk.crc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525205000000.crc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525205005000.bk.crc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525205005000.crc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525205010000.bk.crc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525205010000.crc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525204990000</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525204990000.bk</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525204995000</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525204995000.bk</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525205000000</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525205000000.bk</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525205005000</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525205005000.bk</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525205010000</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525205010000.bk</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/receivedBlockMetadata/log-1525204968601-1525205028601</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_10.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_11.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_12.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_13.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_14.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_15.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_16.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_17.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_18.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_19.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_20.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_21.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_22.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_23.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_24.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_25.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_26.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_27.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_28.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/realtime_data/slot_29.json</PATH>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525120280000.bk.crc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525120280000.crc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525120285000.bk.crc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525120285000.crc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525120290000.bk.crc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525120290000.crc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525120295000.bk.crc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525120295000.crc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525120300000.bk.crc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/.checkpoint-1525120300000.crc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525120280000</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525120280000.bk</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525120285000</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525120285000.bk</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525120290000</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525120290000.bk</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525120295000</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525120295000.bk</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525120300000</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/checkpoint-1525120300000.bk</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/checkpoint_TwitterApp/receivedBlockMetadata/log-1525120275202-1525120335202</PATH>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
     </UpdatedFiles>
   </component>
   <component name="RunDashboard">
@@ -435,7 +1601,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.server.js">
+  <component name="RunManager">
     <configuration name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$" />
     <configuration name="spark_app_followers" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -475,14 +1641,10 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.server.js" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.spark_app_followers" />
+      <item index="1" class="java.lang.String" itemvalue="Python.tweepy_app_new" />
     </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.server.js" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -554,21 +1716,23 @@
     <option name="totallyTimeSpent" value="23321000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18463707" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2394196" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1777509" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18154761" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -576,21 +1740,21 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2394196" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1777509" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2394196" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18463707" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -662,27 +1826,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tweepy_app_new.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark_app_followers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tweepy_app_new.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spark_app_followers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -854,7 +1997,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -862,7 +2004,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -870,7 +2011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -878,7 +2018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,7 +2026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1380">
           <caret line="92" column="67" lean-forward="false" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -895,7 +2033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -903,6 +2040,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -920,26 +2060,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file_pipline/streaming_args.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark_app_wordcloud.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="69" column="59" lean-forward="false" selection-start-line="69" selection-start-column="59" selection-end-line="69" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/static_data/slot_6.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -947,7 +2071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -955,7 +2078,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -963,7 +2085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -971,7 +2092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -979,7 +2099,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -987,7 +2106,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3608">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="195" column="36" lean-forward="false" selection-start-line="195" selection-start-column="36" selection-end-line="195" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file_pipline/streaming_args.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="98" lean-forward="false" selection-start-line="0" selection-start-column="98" selection-end-line="0" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark_app_wordcloud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-227">
+          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark_app_politics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="36" column="51" lean-forward="false" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

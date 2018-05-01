@@ -19,7 +19,9 @@ stop_words = set(stop_words)
 
 VALID_LETTERS = set(c for c in "qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM1234567890',./#-_")
 
-window_size = 5
+with open("./file_pipline/streaming_args.json", "r") as f:
+    window_size= json.load(f)['S_rate']
+
 PORT = int(sys.argv[1])
 conf = SparkConf()
 conf.setAppName("TwitterStreamApp")

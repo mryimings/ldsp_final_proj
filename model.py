@@ -192,7 +192,7 @@ class TrigramModel(object):
                 self.word_count = json_obj["word_count"]
 
     def line_perplexity(self, line):
-        line = word_tokenize(line)
+        # line = word_tokenize(line)
         line = [word.lower() if word in self.lexicon else "UNK" for word in line]
         return 2 ** ((-self.sentence_logprob(line)) / len(line))
 
