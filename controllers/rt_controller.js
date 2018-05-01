@@ -9,6 +9,42 @@ angular.module('wc_app').controller('rt_controller', function($scope, $http, $in
     $scope.c_width = 500;
     $scope.c_height = 500;
 
+    $scope.datas = ["sports","politics","music","dressing","technology","gaming","cars","food"];
+    $scope.copyDatas = $scope.datas;
+    $scope.hide = true;
+    $scope.Key_words = ["sports"];
+
+
+
+    $scope.change = function (x) {
+        $scope.hide = true;
+        $scope.Key_words = x;
+
+    };
+
+    $scope.changeKeyValue = function (v) {
+        var newData = [];
+        angular.forEach($scope.datas, function (data, index, array) {
+            if (data.indexOf(v)>=0){
+                newData.unshift(data);
+            }
+        });
+        $scope.datas = newData;
+        $scope.hide = false;
+
+        if ($scope.datas.length==0||v==""){
+            $scope.datas = $scope.copyDatas;
+        }
+    };
+
+
+    $scope.test = function () {
+        if($scope.datas.length>1){
+            $scope.hide = false;
+        }
+    };
+
+
     $scope.begin = function() {
 
         var req = {
@@ -18,7 +54,8 @@ angular.module('wc_app').controller('rt_controller', function($scope, $http, $in
                 MAX_clouds: $scope.MAX_clouds,
                 MAX_words: $scope.MAX_words,
                 Cloud_Width: $scope.c_width,
-                Cloud_Height: $scope.c_height
+                Cloud_Height: $scope.c_height,
+                keyword: $scope.Key_words
             }
         };
 

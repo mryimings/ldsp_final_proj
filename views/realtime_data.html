@@ -10,12 +10,49 @@
             <div class="c2">
                 <form class="form-horizontal" role="form">
                     <div class="form-group has-success">
-                        <label class="col-sm-6 control-label" for="steaming_rate">
+                        <label class="col-sm-3 control-label" for="steaming_rate">
                             Streaming Rate (in second):
                         </label>
                         <div class="col-sm-2">
                             <input type="number" ng-model="S_rate" class="form-control" id="steaming_rate">
                         </div>
+
+                        <label class="col-sm-3 control-label" for="key_words">
+                            Key Words
+                        </label>
+                        <div class="col-sm-2">
+                            <input type="text" ng-model="Key_words" ng-change="changeKeyValue(Key_words)" value="{{Key_words}}" ng-click="test()" class="form-control" id="key_words">
+                            <div ng-hide="hide">
+                                <select ng-change="change(x)" ng-model="x" multiple>
+                                    <option ng-repeat="data in datas">{{data}}</option>
+                                </select>
+                            </div>
+
+
+                        </div>
+
+                        <!--<div class="col-lg-2">-->
+                            <!--<div class="input-group">-->
+                                <!--<input type="text" ng-model="Key_words" class="form-control" id="key_words">-->
+                                <!--<div class="input-group-btn">-->
+                                    <!--<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">-->
+                                        <!--<span class="caret"></span>-->
+                                    <!--</button>-->
+                                    <!--<ul class="dropdown-menu pull-right">-->
+                                        <!--<li> </li>-->
+                                        <!--<li><a href="#">另一个功能</a></li>-->
+                                        <!--<li><a href="#">其他</a></li>-->
+                                        <!--<li><a href="#">分离的链接</a></li>-->
+                                    <!--</ul>-->
+                                <!--</div>&lt;!&ndash; /btn-group &ndash;&gt;-->
+                            <!--</div>&lt;!&ndash; /input-group &ndash;&gt;-->
+                        <!--</div>&lt;!&ndash; /.col-lg-6 &ndash;&gt;-->
+                    <!--</div>&lt;!&ndash; /.row &ndash;&gt;-->
+
+
+
+
+
                     </div>
                     <div class="form-group has-success">
                         <label class="col-sm-3 control-label" for="cloud_width">
