@@ -45,7 +45,7 @@ angular.module('wc_app').controller('rt_controller', function($scope, $http, $in
     };
 
 
-    $scope.begin = function() {
+    $scope.prepare = function(){
 
         var req = {
             method: 'POST',
@@ -60,6 +60,10 @@ angular.module('wc_app').controller('rt_controller', function($scope, $http, $in
         };
 
         $http(req).then(function(res){console.log(res)});
+    };
+
+    $scope.begin = function() {
+
 
         $scope.slot = -1;
         tc_display();
