@@ -67,7 +67,9 @@ def process_topk(rdd):
     global i
     if sys.argv[2] == "realtime":
         path = "./data/realtime_data/slot_{}.json"
-        num = i % 10
+        with open("./file_pipline/streaming_args.json", "r") as f:
+            cloud_num = json.load(f)['MAX_words']
+            num = i % cloud_num
     elif sys.argv[2] == "static":
         path = "./data/static_data/slot_{}.json"
         num = i
@@ -79,12 +81,15 @@ def process_topk(rdd):
         with open("./file_pipline/streaming_args.json", "r") as f:
             json_obj = json.load(f)
             k = json_obj['MAX_words']
+            absolute_size = json_obj["Cloud_Width"] * json_obj["Cloud_Height"]
         topk = rdd.top(k, lambda x:x[1])
         total = sum(x[1] for x in topk)
         json_list = []
 
+        constant = 400 / (500 * 500) * absolute_size
+
         for element in topk:
-            json_list.append({"text": str(element[0]), "size": float(element[1])/total*400})
+            json_list.append({"text": str(element[0]), "size": float(element[1])/total*constant})
 
         print(json_list)
 
