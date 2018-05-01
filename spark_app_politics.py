@@ -28,21 +28,17 @@ right_model = TrigramModel(is_restore=True, corpusfile="right-model.txt")
 window_size = 10
 k = 20
 
-# create spark configuration
 conf = SparkConf()
 conf.setAppName("TwitterStreamApp")
-# create spark instance with the above configuration
 sc = SparkContext(conf=conf)
 sc.setLogLevel("ERROR")
-# creat the Streaming Context from the above spark context with window size 5 seconds
 ssc = StreamingContext(sc, window_size)
-# setting a checkpoint to allow RDD recovery
 ssc.checkpoint("checkpoint_TwitterApp")
-# read data from port 9009
 dataStream = ssc.socketTextStream("localhost", 9001)
 
 def is_valid(word):
     return len(word) >= 3 and all(c in VALID_LETTERS for c in word) and any(c.isalpha() for c in word)
+
 
 def normalize(word):
     if len(word) >= 2:
@@ -51,6 +47,7 @@ def normalize(word):
         if word[-1] == ".":
             word = word[:-1]
     return word.lower()
+
 
 def aggregate_tags_count(new_values, total_sum):
     return sum(new_values) + (total_sum or 0)
@@ -62,7 +59,6 @@ def get_sql_context_instance(spark_context):
     return globals()['sqlContextSingletonInstance']
 
 
-
 def print_rdd(time, rdd):
     print("----------- %s -----------" % str(time))
     try:
@@ -71,38 +67,14 @@ def print_rdd(time, rdd):
         print(traceback.print_exc())
 
 
-# rdds = dataStream.map(lambda x: tuple(x.split("!@#$[]")))
-#
-# rdds = rdds.filter(lambda x: len(x) == 2)
-
 rdds = dataStream.map((lambda x: word_tokenize(x)))
-
 rdds = rdds.filter(lambda x: len(x) > 0)
-
 rdds = rdds.map(lambda x: (left_model.line_perplexity(x), right_model.line_perplexity(x)))
-
 rdds = rdds.map(lambda x: (((x[0])/(x[0]+x[1]) - 0.5)*2, 1))
-
 rdds = rdds.reduce(lambda x, y: (x[0]+y[0], x[1]+y[1]))
-
 rdds = rdds.map(lambda x: x[0]/x[1]*100)
-
 rdds.foreachRDD(lambda x : print(x.collect()))
 
-#
-# words = dataStream.flatMap(lambda line: line.split(" "))
-# #
-# words = words.map(lambda word: normalize(word))
-# #
-# words = words.filter(lambda word: is_valid(word) and word not in stop_words)
-# #
-# hashtags = words.map(lambda x: (x, 1))
-# #
-# tags_totals = hashtags.reduceByKey(lambda x, y: x+y)
-# #
-# tags_totals.foreachRDD(lambda rdd: process_topk(rdd, k=k))
-
 ssc.start()
-
 ssc.awaitTermination()
 
